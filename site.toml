@@ -10,7 +10,7 @@ base_url = "https://ickm.net"
 # Path at which the site is served. "/" on ickm.net.
 # For a preview at https://tu-ickm.github.io/website/ use "/website/".
 # Only the 404 page needs this, all other links are relative.
-base_path = "/"
+base_path = "/website/"
 
 # true = search engines are asked not to index the site (preview and transition phase).
 noindex = true

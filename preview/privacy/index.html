@@ -3,57 +3,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy · International Conference on Knowledge Management</title>
-<meta name="description" content="The International Conference on Knowledge Management (ICKM), held since 2004.">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#050b21" media="(prefers-color-scheme: dark)">
 <meta name="robots" content="noindex, nofollow">
+<title>ICKM website preview</title>
+<style>
+:root { color-scheme: light dark; --bg: #f6f5f1; --card: #fff; --text: #182134; --muted: #586174; --line: #dcdfe6; --navy: #06295a; --amber: #dc7d05; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0a1022; --card: #101a31; --text: #e4e8ef; --muted: #9ba6b9; --line: #24304a; --navy: #eef2f8; --amber: #f5a13a; } }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1.25rem; background: var(--bg); color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+main { width: 100%; max-width: 24rem; padding: 2rem; border-radius: 14px; background: var(--card); border: 1px solid var(--line); }
+.mark { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-weight: 700; font-size: 1.8rem; letter-spacing: 0.04em; color: var(--navy);
+  display: inline-block; padding-bottom: 0.2rem; border-bottom: 3px solid var(--amber); }
+p { color: var(--muted); line-height: 1.5; }
+label { display: block; font-size: 0.9rem; margin: 1.25rem 0 0.4rem; }
+input { width: 100%; font: inherit; padding: 0.7rem 0.8rem; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: inherit; }
+input:focus { outline: 3px solid var(--amber); outline-offset: 1px; }
+button { margin-top: 1rem; width: 100%; font: inherit; font-weight: 600; padding: 0.75rem; border: 0; border-radius: 999px; background: #f5a13a; color: #1d1205; cursor: pointer; }
+.msg { min-height: 1.5rem; margin: 0.75rem 0 0; color: #c0392b; }
+</style>
+</head>
+<body style="visibility:hidden">
+<main>
+<span class="mark">ICKM</span>
+<p>Preview of the new website of the International Conference on Knowledge Management. Please enter the password.</p>
+<form id="f"><label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" required>
+<button type="submit">Open the preview</button><p class="msg" id="m" role="alert"></p></form>
+<noscript><p>Please switch on JavaScript to open the preview.</p></noscript>
+</main>
+<script type="application/octet-stream" id="enc" data-iv="tf4Pv3TbvRcnS+Cp">3J23xYXMRUd+n0Mt/084kmhOxJI1FF8K7ojpU/wbsLgJ0tzHMBDLGPuGbbC7WXjDLGaLgMsDnxzP/OuiuppdNCl/tV/EkVpVrzo2EnJbJW3km/BUxIkeYwRqTR2YJEmX3l3DDRBO6Zm7+f+j2PVJJ32+CtrLSGzpcUO3o8YnK6/zokyKFO9tZiFV7va6GyFVQ1kOFR7IVlhvxTj1DdKo/iB8tzhN82QsVIaN7kfLaiplu4BTAOe4NVrl9ZQRl/WWESE0WVx0PT1SSFRDQCPcw7biYE1dI9IDr6t4quWpOZg8md44Zt4oiKfJJe1z3iQd+bKrVXOtjpTJ5AsZVlhXgKln+4tvCZUIK3MDGoZGCfRssmi6PrvNul0PjQnhL7OK9FSKI3tS0L2UGdMHB8Ij4qCo6RNsVoAQ/2unyrNgUYkNfMCFHfpVRXVdZlAszu8FDGbcRF2rDqXpf6xPk3vzGyttuS4+8fuReR0TKD7yKXvwONZsGdZCw70Lj0WEer20kHOP/D3i0yuz/tqQtsw/lREQFgzgfDabXq0/uBcJctVBWhw27r9gHXK49boSVgSn25GdwfakS+DL1HhqdXuwoPPPnMrVQssKk4V6xC+jqyCsAbiUJHEBVf/qUaXZoqWPYaK3wTAjtdm77YZJVDPfCoie04Ge5WHfiQu6L245Oolk+iY0wvQVBs0tCIJFJYe7aDcaxCR1xdoPpaFMhhz64opKjZG8YmBzPOJTfd/rL6ujrWjtFmNzxK2/dtHAa8N3uoB6hgDQpSf3HsFlmdAMktNdfTq2pLJyKuGC37hkWS+yB/uvOY75oZdytTbyRocg3YjtKKRTNc2DsoNBonM4aenBDuMn61/OKDCIDT7TSa5qsqoB98yLPrp6nFNjGM2RNc/bsWw7id4ZLHRqHPiQRqq522CNF+DRIgzPPR9w8pMFFVoq32Re00GAwWGOgufIVWSc5ueeBQdH3SEG3fae2cq93e3xe26ebDc8eqiTfi47Eqi0vy9lcVFibRd5TTg9HtFyNh9mpFS0swclhTXXqIcTPT3fKo+qdLb/NHMg7LSGCCKz/W7obuHFe2KL3XiT/W62SvKmCgBsjsT2YVgNjRmOP4SMF/2xOSGMtx7RsdmMu8ZVO+rzTkYFxO8H50lZCyGB5Kz/FPPqynqp5Tzcw3DFfcgQZ74les5rI4Sm4Mc9GOBU7CycFCO2ebW7SFcHv+sS+usZeWsC+x5Clql1taTZzHo+oaG23S42aDChKcuyVwW9LId5ni2B+v6BuNjS2v6ifqEOBij/HHhi7xbaG0Jf8zDPyureO0pnCPOnF6qDaVXT52q0QvfjiiGWPcbpKzfpK7lc9tf8+MIrcT51rfW8AYS/PMaD3hqmZIZYiOKra2M7HGCiGHNmIIED4JY4DPrYmXJ5ZqGdIXn5W8fu40jtya0ke7V/iSNw5BCjD6KeMebxiic3nGFJ6+awSeDUU9Rg8KahbZvRHqV2oUSJS8EP4PS4QMVVbPo6EktdAJkGTu7hgXJGwMONIp5pvV6AY4lzSef48WwNEt3SKeETBiJmAydXCQjsdHCGgyDJC851ij7c/S4EFbWTXtTbDaQWNuZDZSObvSad1M7NPbwrOa4MaTp/7k4ostpiF2guzMNJkvSO3LU91EsltDsIRodRpAMdBu8yo57RXW5szFMZu2BEjSKcFwd2yOOhnUYlIiBzsFlcJGRAe5VkFbg0a26YiRxYZkWIKwjY8lF+WlTtOVYu5j1p/xlf1KDwG4H5h/BGii7e8wgYRSbTa2yK5F+GAbMAdYujK61pDWRvhVaKb2p560JurRNk2Kauxsua+Ghtu/O32JNi3ryNahHuBq7QetkKJ3VvB5oYetkSXWq0J52HkP2CsCTpjeuWTinf8/o6BAMvGp4haycKJ+31Td8JLL4QhDNP0pAnDwoqRfJ5iuwLWDgwfl6NW1lKHasgc4V8VINhln5ujyG/+3Pc5JilALqxVvnp5uWKzaTTGQvKBS1e4Nkh5Nb2HPqIJBeCAQPHt10cL8b7tAOYP2W+0KKJjC+npnHbE//XJB+jEAvcCVV8nbVN3asqLs3mdWvuGgfaqswvKYlVKI19llo0FBC0dDonxzDU8QcWKWFTr9JKFxWf7HKwvoElSVgQbT611mHU6kGFUgN97IqL+QMHF2i3iyVCCG5ynUCAuSKq+/mcuucj3uJpPi0uy+AwB8OeOZzhR0ypPKWd37U1CVLFMJOEr998KjZBvtpaf5LAAVj/NV3W+c4TXA7pMPTk+JNdm0Thi5xJPWIdB7E1UwIe7F2gewRrV6KwModOHlH7kvop6pzmI2KxSOs4XaHTplZqLvlkPXDi/8rsA2jQB3pRbjGoDewCjBnKb9GUeBGINcMXP58N75Z1WGgBA4KGXZ6Aw9a3uKK88SiF3f3PhMzmTea916umgXzUywPZYjVcszag9dprQkErqFS/ArsOSha+sDH2GaFk7fn1vcNKzaidct++NI/BhwoMhJme+IILIAMXAUccuu8LFV4muOErWkLzXlfO3RHfy8kx0TEDtjwr16bruFH6cyVv5ls2QcN4QoTUoemkFuFhk0FlLEONJ0+pQXjvO/74yTSHO479AFGhR55N9QvObSX0CUeitqp1P4F3wsuSQSDJljzs/6hlBM+oGifWTvI4c9LRS3wOSFK56PshSLMFcanmPKjvsegC2rkbtwNXfQe6s4royE6PcVMoCSJW1lDwJXCTrdNRjRKQhA+zT3H8+h/kKt+q05rIuOXPNyIIRIykLo7/U0gHHF/R7L83MD4Cw74tRodnfo30Co1pzTBTwyDUlGWWQr2ZCSalvgS10d9R9ihAdN/VKWZjIooumD6LrupgKumNriBLLXapBxsOBKsxAt87339FooIvZWE3lLmq+K/bW5jHPVoZDgbtNn7mgoByIBn7JtPJGYPkc5BvzLtu0/KLlGaGV/FZxp9SOeEuQBkz1xYKCn3vtXQP6xdMydoOs93oVRWIN3MF73BqPb/jBI2ydUbSAOvJbErt4SeXqry5VTSkXkA5Ocd7wrmaDN7DzfcmTr0EDnnL1OYDAYL/GL10CANtzzf8y1vCT4zrWUuXHofvWxDPhtwXJh0hzWV4WNaKn8L0cMxZHIj+k6PItPf8KO3QJ+tJioKhNureGrZ0Bzqt+NQZxlbSb6ubriVDgtNQZcf8UM0o+Foi6UJltJo7OFNNDHO2Hc4FvnAObiaDPTvCoiedqQ5LA6OhNMOnfMv+VyxziRcvHegfzJm/IrZFonHrZB6wvTnhJBkStisqRY6Q0+xCzrF27humAsExuNqrtzTr/yWhnk9ZqXU2qHVe6eMr9smukYoXBoL6eIEj5d0Ote3QtKOCWMxSiCLK4/gcfqutI7Lr3RNTvQR/w+hNDYIG/3FyJjECJBi1ij4e6KG1eQF6HdGb0b1c8ju6tcRHpK+lfuqWZGenItuTGfS3Ktp5tfhAlvYEug6qahR53NLdVjExAC6pVlnpUxErrc+H1miMJUXIQBHRbUuOxiAqbyO5WCpPRpk5UU5KhHaTV5OB05oYe+uLnsXc3oxjsqKhpqm9GPd5TtUGCN1doMxyC2fQtfmDJyS++2IXb1Au0jaS9E9zXb5RhxBkzzhAvsGANTvV11QifqZVQHgfUy6cb/n1SsHDVUnuf6LWcx/W/IFZ0nVLgLHxYtcE5d9JWlSFNHCOhc791fobFY9gJjIywNfyHauo30YA3vOcyAu03tkgH91Vo8ev3q1WiPZh3e+Xs/cHRApJlHq9AR+5BiX6f6IRb3HcMXxuKCUy0vJ8xbQjlDTtpGmcQM2Nf34iEl24MbtrkNB4pFazhwJvz8PuT/MVYqSyvr9Op1dDzscuW6dZYYmlgHDKmHTw8wlQo7QP88XbYkrjw6aLDvK9+XnUhKDSCPVNa9zMNQ0uvLr8zGrdMKopL4iAdZxlmm+vc3SHRqu86s4hZbQ5NcdhGzq0N04gqBe9Hme7O5K0Q76dF7zvpJ5VD70r/YxKE5XzKEHHd8JMcOUZuj0rdx4lF8u95QQudsPp6TfnSnIrKc5bDqo0VDE0MNuF9b5lJrLOa9EcJmG7Lb5+R1o/LXWiuydQ20dERICIc4TPu2OXvdw1OcLigkMG/l8WmllsAX47RJr/4hIur24/rvW9oMZObzVKBImeYKKgIjtXr6b9g1ybin+KxehLZ6ny0KXdz1WMZ/b5469Uby8jHxyskYoQ/ge3HYEVGSectps5Xac9yIFqyJZeHnxqlL+S9xoWfRyo3s7vIECQoR+VGXlUoRzmmMzPDn5s7FRzOX2LwFkL+px+RG4ySmgaFdqwbEX0OL/7xEpsqbQi+QVZSijcjJ9X8U3lkJK+JH6grfRq4BnNRysUPArEiqmzOjtugH8R9d/4UZ2SLrk/Lo0fcgB7/YoqsEmDlc1LiBTBxllsmnojbhbsZ8zxQv7vUpq0LWlYQ3197kzr5mt3oyf1kJkf22OemwJ5djDA5X1BrdTkU8u53oMuZYLPvZf5qiSk5PFS4+qZjw1XCQNsU7xx48MZFCO8NM9Zq8bOX3aOxkAjaviomj6x5VCcjcFS/BUTZ43l8J4mfZCJBq6+EHTpMYnrx+eXeRpKwJeg+kMYYSg1WBJOy3jpNg9YYlyys6V06XwXhkoz1A5EdUQTkjkUuyP9//QwqZRDaUt3MxxYlEJDzMqszAXMy6pBi9m69J1cc8kZKkavDC3bDcKFvWffqYICVxrTnJa7G6v4ZpRdbMNrVdbhh+mWdW1tJzz6Tneu3kqgnSMhCBtaMXbCuuLRS67uD+V846GIO362EqLdFq1NG6uWu4JZmHm7liBxaru0droBuWvHBQ1mPuD1OCcf1hs+NcvC24FOdSDAsaMVI8My15599YCmy0bj8/MZV/eSLfykkgOdDsOJStfIzaEdbUuL7bFW+yuTaTnDTdnuw1mfXcXax3avnV/hBJIVXi6laZC9uuWgbLfqDRIwtoNah+Q2iZDZddCPcxPYbhUG9c7G+R2Nd3CK/F/suumYqKrLzS9tsOJrNi2wVrk5146VT0coOKvcGo0Vx2Fg3Fmy0ncGclcDnaa2qqQHEzzkkKZ6FZEcMA4YN+GmpABBeoK3eWlJFU4SCBEm9iw6A4i6UlyQV4Q0S4bIbYHtETj3QMZVravkz+Fg1L6HcXRVNx0ds/dm66Lv4MP4K46bECappZltg/X+uhaXpjZw5bM3ZhnJMUXCIGgeAAkHlIQJfVELf+ynMos5LwdFfIW1jnNTj1VzFhLuAPm/L3mJ4eRfmvRUw3m9jq679bRFJViGSwOUGsE0VvljGscbxNeZ1foEU6Nfgfmrxq2OY9Ud8GbhGBP82Y8byDM2NOOx0u/yfpuMlwIqLe553nQ5og1yGTUBUIKIMZR0L+7X0/tCo/RP3gN0G0m3KTH5e08OxofIdQeaFKGEy0zQIgSB41UcOvg4pB4LM43XpOJ7luJ8qmvAOhFKOeeBs77b/KdfP62gHeSdN4Q2Sv6STfdef9C5S6P8o1uLKCf76IZb0z+BWpZpEitMTNtx8ZtmoyZdp3QCZ3yYTLhfGK2RdiXJ79jPVk+Y6q86XM3EST4a7uiIwHB+tbm9A5XGet+i4IOPUe72TYUnqPwOw7tEJH3BBHd8ws7MQzpfNxz2iOQiQ8e47AN751LB6krVwgwo8ju+/kq0t1gZbK9HNxCHrnkzYtup2XBPhxGPoi6oAd75i8PKQNHiiyn6GaaEURGE0+ZiyvT+qKiG4k7vh+NsppHWRuDx7Gn7ZZXmq06wkFyQIAwiLxYViJJIRCy79tOp9yddpqsCynaOZtoGE8npPGF4ZV1QxuLF309o1h36MOY7ZMu16ErlUbogHrxFYLZR4B3Q/YaQfsvJ8tTWhvRqr1vr8BbbboWPYxWbMPyvKuA/oqW8aXlIZpOACoTEIyn0oGSFLWym5LbFwo5ixOhQrkrRHtjD9loaNCaTEJdsLKs94dU2WL2DizJG4RojbAsJfXIUP1HxEthhZhCnb+UE68lDr/fjvPD63Bw7qfeDy5+waZsa6HZHOR8HMujjxwaPd6ePbK+riA7Sm4gyUAMmISfE3o+v3DUZ6cUqSePV3eDXVYPOTykoM5PoTAFivbtT4r+R4Lymjof0aapGJE0LjZTb30ETR+wp18H5eS7Iak8p8gbaEcZEAXRsp0N2ZbOy5Kh6NtZaXR+m8Ma17SsVVNKnHGywp0mJQPRMmf0/wjjAJQqU1BAd27HoMCTEB7WJkvw3oAiVE4YD2vIIxJymUQ4Ddl/IHudHXBzuJtZVrTvyvSvr8GM5CSpr3P4UJLGUnNFIOGG8/Val5gtUpDupQzsVqBm90JV1E9VwZTN9DzCNwhux8+5RjT8fqSg8U+tfACdQszyFN5SY6isly29VagCT/5SCua3/F9AtjT1bV7ZmkQ4zNbv+kx5aPoncoLsd9MbWdbGk+v/Fqmuu+HyJVW0zZpVypxo2NlHvd8W6wz9As/QcoYm7BP8PbGisyuKprbCZMj2o2Rlrp0msWN87ecXx5CB/5gDe5o6DvDMFoQkZcBUlF9/7sCmgpvObdOF6VeEsgUL50gb8oIkkdscdZiN2XVdYY1Nyjfk4J3sWfFalf9s9/GhWekPSiFFvzG4SVPPibRlYFOIr+edAZM1p9Yy7UmNctyAdcWLHkm+JS2Kri3pvaNqxkQ77SvQIgKkPmXfmpHPCgd4L0cyMuUsm1I/PDhuVpGCNPv65PnpDnIYM76UYYcIDZuvWI5NSHPC8+dbBKYotlOSOdpl7cl9PYlUh9UcKZgApolWvMZ192r1ZkyAuaXMIadcCXzcJe2fFeuOf1tu22LYufXnmDZSD21Hkd48rtTwh4nuFmD5TlMmUSvQzEulsyphkUH+XurYV2kFlX4IrDGkz8xzmtK4Sh4jo1ZHQEGmUJwON5cG6LsSvLSxMEEOcj5UCN7L0BrvlsVuJJiKrkjUbmFLpFrLwvstHO0TjHo7ArYZPMDJBgMl6flTHXO/S3Q2f7Vdrs/pHj9sfA2a71u9m1KG0m4p+r3MWUwQeWpwrua3oRQALGKsMKwxGhBe+3uZ0VKyyCX0hUwKA5BMW3p9lYPlbgfLA+QUJ++OP19Z2jAmAwfD115mpcCsAOpY=</script>
 <script>
-/* Light or dark mode and the menu on small screens. The choice is kept in this browser only (no cookie). */
 (function () {
-  var r = document.documentElement;
-  try { var t = localStorage.getItem("ickm-theme"); if (t === "light" || t === "dark") r.setAttribute("data-theme", t); } catch (e) {}
-  r.classList.add("js");
-  document.addEventListener("click", function (e) {
-    var b = e.target.closest && e.target.closest("button");
-    if (!b) return;
-    if (b.classList.contains("theme-toggle")) {
-      var cur = r.getAttribute("data-theme");
-      var dark = cur ? cur === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
-      var next = dark ? "light" : "dark";
-      r.setAttribute("data-theme", next);
-      try { localStorage.setItem("ickm-theme", next); } catch (e) {}
-    } else if (b.classList.contains("menu-toggle")) {
-      var open = b.getAttribute("aria-expanded") !== "true";
-      b.setAttribute("aria-expanded", open ? "true" : "false");
-      document.body.classList.toggle("menu-open", open);
-    }
+  var S = "A5g+r5q4l30X/Sbk5QEcjg==", N = 250000;
+  var d = document, el = d.getElementById("enc");
+  var from64 = function (s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); };
+  // Replace the whole page only once this small page has finished loading (otherwise browsers ignore document.open).
+  var show = function (html) {
+    var go = function () { d.open(); d.write(html); d.close(); };
+    if (d.readyState === "complete") go(); else window.addEventListener("load", go);
+  };
+  var reveal = function () { d.body.style.visibility = "visible"; d.getElementById("pw").focus(); };
+  if (!window.crypto || !crypto.subtle) { reveal(); d.getElementById("m").textContent = "This browser cannot open the preview."; return; }
+  var open = function (raw) {
+    return crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]).then(function (k) {
+      return crypto.subtle.decrypt({ name: "AES-GCM", iv: from64(el.dataset.iv) }, k, from64(el.textContent.trim()));
+    }).then(function (buf) { return new TextDecoder().decode(buf); });
+  };
+  var saved = null;
+  try { saved = sessionStorage.getItem("ickm-preview-key"); } catch (e) {}
+  (saved ? open(from64(saved)) : Promise.reject()).then(show, function () {
+    reveal();
+    d.getElementById("f").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var m = d.getElementById("m"); m.textContent = "";
+      crypto.subtle.importKey("raw", new TextEncoder().encode(d.getElementById("pw").value), "PBKDF2", false, ["deriveBits"])
+        .then(function (b) { return crypto.subtle.deriveBits({ name: "PBKDF2", salt: from64(S), iterations: N, hash: "SHA-256" }, b, 256); })
+        .then(function (bits) {
+          var raw = new Uint8Array(bits);
+          return open(raw).then(function (html) {
+            try { sessionStorage.setItem("ickm-preview-key", btoa(String.fromCharCode.apply(null, raw))); } catch (e) {}
+            show(html);
+          });
+        })
+        .catch(function () { m.textContent = "Wrong password."; });
+    });
   });
 })();
 </script>
-<link rel="stylesheet" href="../style.css">
-<link rel="icon" href="../favicon-text.svg" type="image/svg+xml">
-<script src="../site.js" defer></script>
-</head>
-<body class="">
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-<div class="wrap bar">
-<a class="brand" href="../"><span class="brand-mark">ICKM</span><span class="brand-name">International Conference<br>on Knowledge Management</span></a>
-<nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="../about/">Who we are</a></li><li><a href="../people/">People</a></li><li><a href="../conferences/">Conferences</a></li><li><a href="../publications/">Publications</a></li><li><a href="../history/">History</a></li><li><a href="../community/">Community</a></li><li><a href="../contact/">Contact</a></li></ul></nav>
-<div class="tools"><button class="theme-toggle" type="button" aria-label="Light or dark mode" title="Light or dark mode"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.6A8.3 8.3 0 0 1 9.4 4a8.3 8.3 0 1 0 10.6 10.6z"/></svg></button><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="i-bars" d="M4 7h16M4 12h16M4 17h16"/><path class="i-close" d="M6 6l12 12M18 6L6 18"/></svg></button></div>
-</div>
-<span class="scroll-progress" aria-hidden="true"></span>
-</header>
-<main id="main">
-<section class="top page-head"><div class="wrap ph-grid"><div class="ph-text"><h1>Privacy</h1></div></div></section><div class="wrap prose page-body"><div class="placeholder"><p>Placeholder: The privacy statement follows once the organization responsible for this website is confirmed.</p></div>
-<p>This website sets no cookies, has no forms and loads no fonts or scripts from other servers. If you switch between light and dark mode, your choice is stored in your own browser only and is never sent to us.</p></div>
-</main>
-<footer class="site-footer">
-<div class="wrap">
-<div class="foot-grid"><p class="foot-brand"><span class="brand-mark" aria-hidden="true">ICKM</span><span><strong>ICKM</strong><br>International Conference on Knowledge Management</span></p><nav class="foot-cols" aria-label="Footer"><div class="foot-col"><p class="foot-head">ICKM</p><ul><li><a href="../about/">Who we are</a></li><li><a href="../people/">People</a></li><li><a href="../about/partners/">Partners</a></li><li><a href="../history/">History</a></li></ul></div><div class="foot-col"><p class="foot-head">Conferences</p><ul><li><a href="../conferences/">All conferences</a></li><li><a href="../next/">Next conference</a></li><li><a href="../publications/">Publications</a></li></ul></div><div class="foot-col"><p class="foot-head">Get in touch</p><ul><li><a href="../community/">Community</a></li><li><a href="../contact/">Contact</a></li></ul></div></nav></div><p class="foot-note"><span>ICKM · International Conference on Knowledge Management · since 2004</span><span><a href="../imprint/">Imprint</a> · <a href="../privacy/">Privacy</a></span></p>
-</div>
-</footer>
-<a class="to-top" href="#main" aria-label="Back to top"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="tt-track" cx="20" cy="20" r="17"/><circle class="tt-bar" cx="20" cy="20" r="17" pathLength="100"/><path class="tt-arrow" d="M20 27V13M14 19l6-6 6 6"/></svg></a>
 </body>
 </html>

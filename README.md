@@ -12,7 +12,7 @@ The site is static: plain HTML pages, no database, no login and nothing on a ser
 | Site settings (title, indexing, which build is published) | `site.toml` |
 | Layout and style | `templates/base.html`, `static/style.css` |
 | Small script (background videos, map journey) | `static/site.js` |
-| Logo and background videos (switched off for now) | `logo` and `videos` in `site.toml` |
+| Logo and background videos | `static/logo*.svg`, `static/favicon.svg`, `static/media/`, switched in `site.toml` |
 | Land outlines for the world map (Natural Earth, public domain) | `data/ne_110m_land.geojson` |
 | Build script | `build.py` |
 | Publishing to GitHub Pages | branch `gh-pages` for now. Automatic build: `tools/pages-workflow.yml` (inactive copy, see below) |
@@ -59,9 +59,9 @@ node tools/protect.mjs <file-with-password> <built-site-folder> [more folders]
 
 ## Logo and videos
 
-The logo and the background videos are switched off in `site.toml` until their use is cleared. The site then shows
-"ICKM" as text in the header and the still backgrounds without video. To switch them on: put `logo.svg`,
-`logo-dark.svg`, `favicon.svg` and the folder `media/` into `static/`, then set `logo = true` and `videos = true`.
+The logo (`static/logo.svg`, `static/logo-dark.svg`, `static/favicon.svg`) and the background videos
+(`static/media/`) are switched on with `logo = true` and `videos = true` in `site.toml`. With `false`, the site shows
+"ICKM" as text in the header and the page tops without video.
 
 For viewing on one computer only, the files can also live in `assets-local/` and be switched on in `local.toml`
 (both not in git).

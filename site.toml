@@ -18,7 +18,7 @@ noindex = true
 # Which build GitHub Pages publishes: "transition" (one page) or "full" (the whole site).
 publish = "transition"
 
-# Logo (globe with ICKM) and background videos. Off until their use is cleared, then set to true and put the files
-# into static/ (logo.svg, logo-dark.svg, favicon.svg, media/). Without the logo the header shows "ICKM" as text.
-logo = false
-videos = false
+# Logo (globe with ICKM) and background videos, files in static/ (logo.svg, logo-dark.svg, favicon.svg, media/).
+# false = the header shows "ICKM" as text and the page tops have no video.
+logo = true
+videos = true

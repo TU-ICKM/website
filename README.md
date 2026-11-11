@@ -47,6 +47,16 @@ python -m http.server 8000 --bind 127.0.0.1 --directory _site
 
 Then open http://localhost:8000 in a browser. The one-page transition site is in `_site_transition`.
 
+## Password for the preview
+
+While imprint and privacy texts are not final, the preview on GitHub Pages sits behind a password.
+`tools/protect.mjs` encrypts every built page (AES-256-GCM, key from the password with PBKDF2). Visitors see a short
+password page, the browser decrypts the site after the correct entry. The password is never stored in this repository.
+
+```
+node tools/protect.mjs <file-with-password> <built-site-folder> [more folders]
+```
+
 ## Logo and videos
 
 The logo and the background videos are switched off in `site.toml` until their use is cleared. The site then shows

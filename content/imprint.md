@@ -2,7 +2,11 @@
 
 Information about the provider of this website.
 
-> Placeholder: Name and postal address of the person responsible for this website follow here.
+## Responsible for this website
+
+The Chair of ICKM.
+
+> Placeholder: Name and postal address of the Chair follow here once they are confirmed.
 
 ## Contact
 

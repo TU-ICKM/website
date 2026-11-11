@@ -2,7 +2,11 @@
 
 How this website handles personal data.
 
-> Placeholder: Name and postal address of the person responsible for data protection follow here (the same as in the imprint).
+## Responsible for data protection
+
+The Chair of ICKM, as named in the [imprint](/imprint/).
+
+> Placeholder: Name and postal address of the Chair follow here once they are confirmed.
 
 ## Contact for data protection
 

@@ -1,0 +1,24 @@
+# Site settings. Change these lines, then run: python build.py
+
+title = "International Conference on Knowledge Management"
+brand = "ICKM"
+description = "The International Conference on Knowledge Management (ICKM), held since 2004."
+
+# Address of the live site. Used for sitemap.xml once the site may be indexed.
+base_url = "https://ickm.net"
+
+# Path at which the site is served. "/" on ickm.net.
+# For a preview at https://tu-ickm.github.io/website/ use "/website/".
+# Only the 404 page needs this, all other links are relative.
+base_path = "/"
+
+# true = search engines are asked not to index the site (preview and transition phase).
+noindex = true
+
+# Which build GitHub Pages publishes: "transition" (one page) or "full" (the whole site).
+publish = "transition"
+
+# Logo (globe with ICKM) and background videos. Off until their use is cleared, then set to true and put the files
+# into static/ (logo.svg, logo-dark.svg, favicon.svg, media/). Without the logo the header shows "ICKM" as text.
+logo = false
+videos = false

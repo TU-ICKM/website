@@ -1,0 +1,7 @@
+_site/
+_site_transition/
+_publish/
+__pycache__/
+local.toml
+assets-local/
+data/people.local.toml

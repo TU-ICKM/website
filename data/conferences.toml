@@ -1,0 +1,280 @@
+# All ICKM conferences, one block per year.
+# This file feeds the conference list, every year page, the home page, History and Publications.
+# A new year means: copy one block, fill in what is known, leave the rest out.
+#
+# Fields (all optional except year and status):
+#   year          the year
+#   status        "held", "cancelled", "announced" (date or place public) or "planned" (nothing public yet)
+#   theme         conference theme
+#   city, region, country, venue
+#   start, end    dates as YYYY-MM-DD, without quotes
+#   format        "onsite", "virtual" or "hybrid"
+#   hosts         list of names
+#   partners      list of names
+#   joint         one sentence if ICKM ran together with another event
+#   geo           [latitude, longitude] of the city, for the maps (approximate, city centre; 2023: the state)
+#   website       address of the conference website, if it still works
+#   website_archive  link to a copy in the Internet Archive, if the website is gone
+#   proceedings   { title = "...", publisher = "...", url = "..." }
+#   notes         one sentence shown on the page
+#
+# Notes for the editors (sources, open checks) are kept outside this repository.
+#
+# Only for the coming conference (shown as cards on its page, "To be announced" while empty):
+#   cfp           link to the call for papers
+#   deadlines     [{ label = "Full papers", date = 2027-03-01 }, ...]
+#   submission    link to the submission system of the host
+#   registration  link to the registration of the host
+#   programme     link to the programme
+#
+# Not shown on purpose (decisions of the Chair): ordinal numbers ("21st ICKM"), the history poster phases,
+# place and date of the next conference before they are public.
+
+[[conference]]
+year = 2004
+status = "held"
+geo = [1.29, 103.85]
+theme = "People, Knowledge and Technology: What Have We Learnt So Far?"
+city = "Singapore"
+country = "Singapore"
+website_archive = "https://web.archive.org/web/20040513091800/http://www.ickm2004.org/"
+proceedings = { publisher = "World Scientific", url = "https://doi.org/10.1142/5747" }
+
+[[conference]]
+year = 2005
+status = "held"
+geo = [35.23, -80.84]
+theme = "Knowledge Management: Nurturing Culture, Innovation and Technology"
+city = "Charlotte"
+region = "North Carolina"
+country = "USA"
+website_archive = "https://web.archive.org/web/20050316051143/http://www.ickm2005.org/"
+proceedings = { publisher = "World Scientific", url = "https://doi.org/10.1142/5971" }
+
+[[conference]]
+year = 2006
+status = "held"
+geo = [51.48, -0.01]
+theme = "Creating Collaborative Advantage Through Knowledge & Innovation"
+city = "Greenwich, London"
+country = "United Kingdom"
+website_archive = "https://web.archive.org/web/20060601180940/http://www.ickm2006.org/"
+proceedings = { title = "Creating Collaborative Advantage Through Knowledge and Innovation", publisher = "World Scientific", url = "https://doi.org/10.1142/6337" }
+
+[[conference]]
+year = 2007
+status = "held"
+geo = [48.21, 16.37]
+theme = "Knowledge Management: Innovation, Technologies and Cultures"
+city = "Vienna"
+country = "Austria"
+start = 2007-08-27
+end = 2007-08-28
+proceedings = { publisher = "World Scientific", url = "https://doi.org/10.1142/6573" }
+
+[[conference]]
+year = 2008
+status = "held"
+geo = [39.96, -83.0]
+theme = "Knowledge Management Competencies & Professionalism"
+city = "Columbus"
+region = "Ohio"
+country = "USA"
+start = 2008-10-23
+end = 2008-10-24
+website_archive = "https://web.archive.org/web/20081021050510/http://www.ickm2008.org/"
+proceedings = { publisher = "World Scientific", url = "https://doi.org/10.1142/7134" }
+
+[[conference]]
+year = 2009
+status = "held"
+geo = [22.32, 114.17]
+theme = "Managing Knowledge for Global and Collaborative Innovations"
+city = "Hong Kong"
+start = 2009-12-03
+end = 2009-12-04
+website = "http://ickm2009.pbworks.com/w/page/7540356/FrontPage"
+proceedings = { publisher = "World Scientific", url = "https://doi.org/10.1142/7698" }
+
+[[conference]]
+year = 2010
+status = "held"
+geo = [40.44, -80.0]
+theme = "Great Tradition and Universal Experience"
+city = "Pittsburgh"
+region = "Pennsylvania"
+country = "USA"
+venue = "Hilton Pittsburgh"
+start = 2010-10-22
+end = 2010-10-23
+joint = "Held just before the ASIS&T Annual Meeting."
+
+[[conference]]
+year = 2011
+status = "cancelled"
+country = "Jordan"
+notes = "Planned in Jordan and cancelled because of the situation in the Middle East."
+
+[[conference]]
+year = 2012
+status = "held"
+geo = [-26.2, 28.05]
+theme = "Rethinking Knowledge Management: Foresight in the 21st Century"
+city = "Johannesburg"
+country = "South Africa"
+start = 2012-09-04
+end = 2012-09-06
+
+[[conference]]
+year = 2013
+status = "held"
+geo = [45.5, -73.57]
+theme = "Knowledge Management Metrics, Performance Measurement, Capacity Building and Certifications"
+city = "Montreal"
+country = "Canada"
+start = 2013-11-01
+end = 2013-11-02
+joint = "Held together with the ASIS&T Annual Meeting."
+
+[[conference]]
+year = 2014
+status = "held"
+geo = [36.9, 30.7]
+theme = "Innovation, Knowledge Discovery & Technology Management"
+city = "Antalya"
+country = "Türkiye"
+website = "http://ickm2014.bilgiyonetimi.net/"
+
+[[conference]]
+year = 2015
+status = "held"
+geo = [34.69, 135.5]
+theme = "Cognition and Creativeness of Innovative Knowledge"
+city = "Osaka"
+country = "Japan"
+venue = "I-Site Namba"
+start = 2015-11-04
+end = 2015-11-06
+
+[[conference]]
+year = 2016
+status = "held"
+geo = [48.21, 16.37]
+theme = "Information Management in a Changing World (IMCW2016)"
+city = "Vienna"
+country = "Austria"
+joint = "Held together with the symposium Information Management in a Changing World (IMCW2016)."
+
+[[conference]]
+year = 2017
+status = "held"
+geo = [32.9, -97.04]
+theme = "Big Data in the Big D"
+city = "Dallas/Fort Worth"
+region = "Texas"
+country = "USA"
+venue = "Dallas/Fort Worth Marriott Hotel & Golf Club at Champions Circle, Fort Worth"
+start = 2017-10-25
+end = 2017-10-26
+
+[[conference]]
+year = 2018
+status = "held"
+geo = [49.28, -123.12]
+theme = "A Profession and Discipline of Action"
+city = "Vancouver"
+country = "Canada"
+start = 2018-11-09
+end = 2018-11-10
+joint = "Held together with the 81st ASIS&T Annual Meeting."
+
+[[conference]]
+year = 2019
+status = "held"
+geo = [-27.6, -48.55]
+theme = "Knowledge and Learning Governance for Innovation"
+city = "Florianópolis"
+country = "Brazil"
+venue = "Federal University of Santa Catarina (UFSC)"
+start = 2019-12-04
+end = 2019-12-06
+joint = "Joint conference with the 2nd SUCEG seminar."
+website = "https://suceg.ufsc.br/"
+
+[[conference]]
+year = 2020
+status = "held"
+geo = [35.99, -78.9]
+theme = "Knowledge Commons in the City of Medicine"
+city = "Durham"
+region = "North Carolina"
+country = "USA"
+format = "virtual"
+hosts = ["KiPA"]
+notes = "Held online because of the COVID-19 pandemic."
+
+[[conference]]
+year = 2021
+status = "cancelled"
+notes = "Cancelled because of the COVID-19 pandemic."
+
+[[conference]]
+year = 2022
+status = "held"
+geo = [52.39, 13.06]
+theme = "Knowledge, Uncertainty and Risks: From individual to global scale"
+city = "Potsdam"
+country = "Germany"
+start = 2022-06-23
+end = 2022-06-24
+partners = ["ASIS&T SIG-KM", "IAKM", "gfwm", "GI", "SKMF"]
+website = "https://ickm2022.fh-potsdam.de/index.html"
+proceedings = { title = "Proceedings of the 17th International Conference on Knowledge Management", publisher = "UNT Digital Library", url = "https://digital.library.unt.edu/ark:/67531/metadc2026753/" }
+notes = "Moved from March to June 2022."
+
+[[conference]]
+year = 2023
+status = "held"
+geo = [-27.3, -50.2]
+theme = "Bridge to Knowledge Society"
+region = "Santa Catarina"
+country = "Brazil"
+website = "https://ickmciki2023.ufsc.br/site/"
+
+[[conference]]
+year = 2024
+status = "held"
+geo = [41.15, -81.36]
+theme = "Navigating Inequities and Social Justice in the Age of Artificial Intelligence"
+city = "Kent"
+region = "Ohio"
+country = "USA"
+venue = "Kent State University"
+start = 2024-10-21
+end = 2024-10-22
+
+[[conference]]
+year = 2025
+status = "held"
+geo = [38.72, -9.14]
+theme = "Shaping the Future of Data, Knowledge, and Innovation with AI for Global Sustainable Change"
+city = "Lisbon"
+country = "Portugal"
+joint = "First CIKI-ICKM-GFIC Triple Conference."
+website = "https://gfic.icaa.pt/en/gfic-2025/"
+
+[[conference]]
+year = 2026
+status = "held"
+geo = [-33.45, -70.67]
+theme = "The Next Horizon: Integrating AI, Knowledge, Innovation and Talent for Sustainable Global Development"
+city = "Santiago"
+country = "Chile"
+start = 2026-10-28
+end = 2026-10-30
+joint = "Second CIKI-ICKM-GFIC Triple Conference."
+website = "https://knowledgeconference.cl/"
+
+[[conference]]
+year = 2027
+status = "planned"

@@ -1,0 +1,18 @@
+# People shown on the People page, group by group.
+#
+# Names and roles appear only after the ICKM Chair has approved them. Until then the page shows a placeholder.
+#
+# Format (copy for each group and each person):
+#
+# [[group]]
+# title = "Name of the group"
+# intro = "Optional sentence under the group title"
+#
+# [[group.person]]
+# role = "Role"                       (required)
+# name = "Full name as the person wants it shown"
+# affiliation = "University or organisation"
+# country = "Country"
+# url = "Official profile page (university page, ORCID), never a private page"
+#
+# Only work-related details. No photos until the rights are clear.

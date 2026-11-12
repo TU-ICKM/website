@@ -1141,7 +1141,7 @@ def build_full(settings, conferences, out_root):
 
     title, text = read_content("404")
     s.write("404", title, page_head(title) + f'<div class="wrap prose page-body">{markdown(text, "")}</div>',
-            absolute_base=settings.get("base_path", "/"))
+            absolute_base=settings.get("full_path", settings.get("base_path", "/")))
     s.write_robots_and_sitemap()
     return out
 

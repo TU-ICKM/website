@@ -7,15 +7,16 @@ description = "The International Conference on Knowledge Management (ICKM), held
 # Address of the live site. Used for sitemap.xml once the site may be indexed.
 base_url = "https://ickm.net"
 
-# Path at which the site is served. "/" on ickm.net.
-# For a preview at https://tu-ickm.github.io/website/ use "/website/".
-# Only the 404 page needs this, all other links are relative.
-base_path = "/website/"
+# Paths at which the two builds are served. Only the 404 pages need them, all other links are relative.
+# base_path: the transition page ("/" on ickm.net and on the preview server).
+# full_path: the full site, which stays a preview behind the password until it goes live.
+base_path = "/"
+full_path = "/preview/"
 
 # true = search engines are asked not to index the site (preview and transition phase).
 noindex = true
 
-# Which build GitHub Pages publishes: "transition" (one page) or "full" (the whole site).
+# Which build goes to the root of the web server: "transition" (one page) or "full" (the whole site).
 publish = "transition"
 
 # Logo (globe with ICKM) and background videos, files in static/ (logo.svg, logo-dark.svg, favicon.svg, media/).

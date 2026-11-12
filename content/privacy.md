@@ -18,12 +18,12 @@ This website sets no cookies. It uses no analytics and no tracking. It loads no 
 
 ## Hosting and server logs
 
-This website is hosted on GitHub Pages, a service of GitHub, Inc. (USA). When you visit the website, GitHub logs your IP address for security purposes. This happens whether or not you are signed in to GitHub. Details are in the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). The legal basis is our legitimate interest in a secure and reliable website (Art. 6(1)(f) GDPR). GitHub may process this data in the USA.
+This website runs on a server of netcup GmbH, a hosting company in Germany. When you visit the website, the web server records your IP address, the date and time, the page you asked for, the page you came from and the name of your browser in a log file. We use this log only to keep the website secure and working. The log is deleted after 14 days. The legal basis is our legitimate interest in a secure and reliable website (Art. 6(1)(f) GDPR).
 
 ## Stored in your own browser
 
 - If you switch between light and dark mode, your choice is stored in your own browser only (local storage). It is never sent to us. You can delete it at any time in your browser settings.
-- While the preview of this website is protected by a password, the key for the preview is kept in your browser until you close the tab (session storage). It is never sent to us.
+- While the preview of this website is protected by a password, your browser remembers the password until you close it. The website sets no cookie for this.
 
 ## Email
 

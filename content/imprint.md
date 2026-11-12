@@ -30,4 +30,4 @@ Texts and design of this website belong to ICKM. Conference themes, papers and p
 
 ## Hosting
 
-This website is hosted on GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
+This website is hosted on a server of netcup GmbH, Emmy-Noether-Straße 10, 76131 Karlsruhe, Germany.

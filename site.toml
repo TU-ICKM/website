@@ -22,3 +22,7 @@ publish = "transition"
 # false = the header shows "ICKM" as text and the page tops have no video.
 logo = true
 videos = true
+
+# Photos from conferences. Stays false here: placeholder photos without cleared rights exist only on the local
+# computer (photos-local/, not in git). Before going live they are replaced by own photos or photos with permission.
+photos = false

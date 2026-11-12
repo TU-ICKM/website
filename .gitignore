@@ -5,3 +5,4 @@ __pycache__/
 local.toml
 assets-local/
 data/people.local.toml
+photos-local/

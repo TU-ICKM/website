@@ -77,7 +77,19 @@ FULL_ONLY = ("media/", "site.js")
 # Logo and background videos are switched on in site.toml (logo = true, videos = true) once their use is cleared.
 # Until then they can live in assets-local/ (not in git) and be switched on in local.toml for viewing on this computer.
 ASSETS_LOCAL = ROOT / "assets-local"
-FEATURES = {"logo": False, "videos": False}
+FEATURES = {"logo": False, "videos": False, "photos": False}
+
+# Placeholder photos live only in photos-local/ (not in git, with their list photos.toml) and show only with
+# photos = true in local.toml. The public build never has them. For the online preview they are put into the
+# pages before encryption (tools/inline_photos.py), so they never lie readable on GitHub Pages.
+PHOTOS_LOCAL = ROOT / "photos-local"
+
+
+def load_photos():
+    path = PHOTOS_LOCAL / "photos.toml"
+    if not FEATURES["photos"] or not path.exists():
+        return []
+    return tomllib.loads(path.read_text(encoding="utf-8")).get("photo", [])
 LOGO_FILES = ("logo.svg", "logo-dark.svg", "favicon.svg")
 
 
@@ -503,6 +515,11 @@ class Site:
                 dest = self.out / name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(f, dest)
+        if not self.transition:
+            for p in load_photos():
+                dest = self.out / "photos" / p["file"]
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(PHOTOS_LOCAL / p["file"], dest)
 
     def write_robots_and_sitemap(self):
         (self.out / ".nojekyll").write_text("", encoding="utf-8")
@@ -529,6 +546,31 @@ def page_head(title, lead="", eyebrow="", media="", aside="", extra_class=""):
     grid = "ph-grid has-aside" if aside else "ph-grid"
     return (f'<section class="{cls}">{media}'
             f'<div class="wrap {grid}"><div class="ph-text">{text}</div>{aside}</div></section>')
+
+
+def photo_figure(p, from_dir, cls=""):
+    """One placeholder photo with caption and a visible "Placeholder photo" label."""
+    src = rel(from_dir, f"photos/{p['file']}")
+    classes = " ".join(x for x in ("photo reveal", p.get("layout", ""), cls) if x)
+    return (f'<figure class="{classes}"><img src="{src}" alt="{esc(p.get("alt", ""))}" width="{p["width"]}" '
+            f'height="{p["height"]}" loading="lazy" decoding="async">'
+            f'<figcaption>{esc(p.get("caption", ""))}</figcaption>'
+            '<span class="ph-badge">Placeholder photo</span></figure>')
+
+
+def photos_for(place, year=None):
+    return [p for p in load_photos() if place in p.get("places", []) and (year is None or p.get("year") == year)]
+
+
+def photo_band(from_dir):
+    """Home page: photos from past conferences (only with photos = true)."""
+    photos = photos_for("home")
+    if not photos:
+        return ""
+    return ('<section class="band moments" aria-labelledby="moments-title"><div class="wrap">'
+            '<div class="section-head reveal"><p class="eyebrow">Moments</p>'
+            '<h2 id="moments-title">Moments from ICKM</h2></div>'
+            '<div class="mosaic">' + "".join(photo_figure(p, from_dir) for p in photos) + "</div></div></section>")
 
 
 def video_bg(from_dir, name):
@@ -593,6 +635,9 @@ def year_page_body(c, from_dir, prev_c=None, next_c=None):
     inner = '<dl class="facts">' + "".join(rows) + "</dl>"
     if c.get("notes"):
         inner += f"<p>{esc(c['notes'])}</p>"
+    photos = photos_for("year", year)
+    if photos:
+        inner += '<div class="year-photos">' + "".join(photo_figure(p, from_dir) for p in photos) + "</div>"
     return body + f'<div class="wrap prose page-body">{inner}{pager}</div>'
 
 
@@ -695,8 +740,9 @@ def about_body(conferences):
              ("community/", "Community", "Ways to take part between the conferences.")]
     link_html = "".join(f'<a class="link-card reveal" href="{rel(d, p)}"><span class="lc-title">{t}</span>'
                         f'<span class="lc-text">{x}</span></a>' for p, t, x in links)
+    banner = "".join(photo_figure(p, d, "banner") for p in photos_for("about")[:1])
     return (page_head(title, inline(lead, d), eyebrow="About ICKM")
-            + f'<div class="wrap page-body"><ul class="stats">{stat_html}</ul>'
+            + f'<div class="wrap page-body"><ul class="stats">{stat_html}</ul>{banner}'
             + f'<div class="prose">{markdown(rest, d)}</div>'
             + f'<h2 class="grid-title">Find out more</h2><div class="link-grid">{link_html}</div></div>')
 
@@ -1033,7 +1079,7 @@ def build_full(settings, conferences, out_root):
     title, text = read_content("home")
     lead, rest = first_paragraph(text)
     body = (home_hero(settings, conferences, inline(lead, "")) + glance(conferences) + year_strip(conferences)
-            + journey(conferences)
+            + journey(conferences) + photo_band("")
             + home_intro(rest) + latest_band(conferences) + next_band(conferences))
     s.write("", settings["title"], body, body_class="home", script=True)
 

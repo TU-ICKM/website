@@ -145,7 +145,16 @@ def markdown(text, from_dir):
             css = "placeholder" if body.lower().startswith("placeholder:") else "note"
             out.append(f'<div class="{css}"><p>{inline(body, from_dir)}</p></div>')
         else:
-            out.append(f"<p>{inline(' '.join(l.strip() for l in lines), from_dir)}</p>")
+            # A line that ends with a backslash keeps its line break (for postal addresses).
+            parts = []
+            for i, l in enumerate(lines):
+                text = l.strip()
+                last = i == len(lines) - 1
+                if text.endswith("\\") and not last:
+                    parts.append(inline(text[:-1].rstrip(), from_dir) + "<br>")
+                else:
+                    parts.append(inline(text, from_dir) + ("" if last else " "))
+            out.append(f"<p>{''.join(parts)}</p>")
     return "\n".join(out)
 
 
